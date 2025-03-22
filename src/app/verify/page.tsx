@@ -7,12 +7,12 @@ import { Label } from "@/components/ui/label";
 export default function VerifyPage() {
   return (
     <Layout>
-      <section className="container py-12 space-y-8">
-        <div className="mx-auto flex max-w-4xl flex-col items-center space-y-4 text-center">
-          <h1 className="text-3xl font-bold">Connect Wallet</h1>
-          <p className="text-muted-foreground">You need to login to continue</p>
+      <section className="container flex flex-col items-center justify-center space-y-12 px-4 mx-auto">
+        <div className="w-full mt-4 text-center">
+          <h1 className="text-5xl font-bold mb-6">Connect Wallet</h1>
+          <p className="text-xl mb-8 text-muted-foreground">You need to login to continue</p>
           
-          <Button className="bg-indigo-600 hover:bg-indigo-700 mt-4">
+          <Button className="bg-indigo-600 hover:bg-indigo-700 mt-4 h-12 text-lg">
             Select Wallet
           </Button>
           
@@ -21,7 +21,7 @@ export default function VerifyPage() {
           </p>
         </div>
 
-        <div className="mx-auto max-w-xl mt-12">
+        <div className="w-full max-w-xl mt-12">
           <Card className="bg-card/50">
             <CardHeader>
               <CardTitle>Verify Token</CardTitle>
@@ -32,21 +32,21 @@ export default function VerifyPage() {
             <CardContent className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="token-address">Token Address</Label>
-                <Input id="token-address" placeholder="Enter token address" />
+                <Input id="token-address" placeholder="Enter token address" className="h-12 rounded-md border-white/10 focus-visible:border-white/20 bg-[#1e1e24]" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="token-name">Token Name</Label>
-                <Input id="token-name" placeholder="Enter token name" />
+                <Input id="token-name" placeholder="Enter token name" className="h-12 rounded-md border-white/10 focus-visible:border-white/20 bg-[#1e1e24]" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="token-symbol">Token Symbol</Label>
-                <Input id="token-symbol" placeholder="Enter token symbol" />
+                <Input id="token-symbol" placeholder="Enter token symbol" className="h-12 rounded-md border-white/10 focus-visible:border-white/20 bg-[#1e1e24]" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="token-description">Token Description</Label>
-                <Input id="token-description" placeholder="Enter token description" />
+                <Input id="token-description" placeholder="Enter token description" className="h-12 rounded-md border-white/10 focus-visible:border-white/20 bg-[#1e1e24]" />
               </div>
-              <Button className="w-full bg-indigo-600 hover:bg-indigo-700">
+              <Button className="w-full bg-indigo-600 hover:bg-indigo-700 h-12 text-lg font-bold">
                 Submit for Verification
               </Button>
             </CardContent>

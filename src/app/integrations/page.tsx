@@ -5,15 +5,15 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 export default function IntegrationsPage() {
   return (
     <Layout>
-      <section className="container py-12 space-y-8">
-        <div className="mx-auto flex max-w-4xl flex-col items-center space-y-4 text-center">
-          <h1 className="text-3xl font-bold">Integrations & Audits</h1>
-          <p className="text-muted-foreground">
+      <section className="container flex flex-col items-center justify-center space-y-12 px-4 mx-auto">
+        <div className="w-full mt-4 text-center">
+          <h1 className="text-5xl font-bold mb-6">Integrations & Audits</h1>
+          <p className="text-xl mb-8 text-muted-foreground">
             Explore our supported integrations and audits
           </p>
         </div>
 
-        <div className="mx-auto max-w-4xl mt-8">
+        <div className="w-full max-w-4xl mt-8">
           <div className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Supported Integrations</h2>
             <p className="text-muted-foreground mb-8">

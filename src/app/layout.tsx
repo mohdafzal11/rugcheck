@@ -17,6 +17,10 @@ const vt323 = {
   variable: "--font-vt323",
 };
 
+const jersey10 = {
+  variable: "--font-jersey10",
+};
+
 export const metadata: Metadata = {
   title: "RugCheck - Solana Token Checker",
   description: "Check Solana token markets for security and reliability",
@@ -30,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${vt323.variable} antialiased bg-black text-foreground font-mono`}
+        className={`${geistSans.variable} ${geistMono.variable} ${vt323.variable} ${jersey10.variable} antialiased bg-black text-foreground font-mono`}
         style={{ backgroundImage: 'none !important' }}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
