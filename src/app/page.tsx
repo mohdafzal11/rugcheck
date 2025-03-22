@@ -2,7 +2,7 @@ import { Layout } from "@/components/layout"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import Link from "next/link"
-import Image from "next/image"
+
 
 export default function Home() {
   return (
