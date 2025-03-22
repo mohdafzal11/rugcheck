@@ -124,10 +124,17 @@
     -webkit-font-smoothing: none;
     font-smooth: never;
     text-rendering: optimizeSpeed;
+    background-color: black !important;
+    background-image: none !important;
   }
   
   h1, h2, p, a, button, input {
     font-family: 'VT323', monospace;
     letter-spacing: 0;
   }
+}
+
+/* Override any background images */
+html, body, #__next, main, div {
+  background-image: none !important;
 }
